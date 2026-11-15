@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Isaac Boateng, a beginner web developer building clean, responsive websites.">
+    <title>Isaac Boateng | Web Developer</title>
+
+    <!-- Lets CSS know JavaScript is running (so fade-in effects only apply when JS works) -->
+    <script>document.documentElement.classList.add('js');</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo">Isaac <span>Boateng</span></a>
+
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text fade-in">
+                        <h1>Hi, I'm <span class="highlight">Isaac Boateng</span></h1>
+                        <p>A passionate beginner web developer focused on building clean, responsive,
+                            and user-friendly websites with modern technologies.</p>
+                        <div class="hero-buttons">
+                            <a href="#project" class="btn btn-primary">View My Work</a>
+                            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-image fade-in">
+                        <img src="mat-pic.jpeg" alt="Isaac Boateng">
+
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title fade-in">About Me</h2>
+
+                <div class="about-content">
+                    <div class="about-text fade-in">
+                        <h3>Turning Ideas Into Reality</h3>
+                        <p>I'm a self-taught web developer with a strong interest in HTML, CSS, and JavaScript.
+                            I love creating beautiful, functional websites that provide great user experiences.</p>
+                        <p>Currently learning React and Node.js to expand my full-stack capabilities.
+                            I believe in writing clean, maintainable code and continuously improving my skills.</p>
+
+                        <div class="skills">
+                            <div class="skill-item">
+                                <div class="skill-name">HTML <span>90%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-name">JavaScript <span>75%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-name">Responsive Design <span>85%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-image fade-in">
+                        <img src="Profile.jpg" alt="Portrait of Isaac Boateng">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="project" class="project">
+            <div class="container">
+                <h2 class="section-title fade-in">My Projects</h2>
+
+                <div class="project-grid">
+                    <article class="project-card fade-in">
+                        <div class="project-icon"><i class="fas fa-user"></i></div>
+                        <h3>Personal Portfolio</h3>
+                        <p>This website. Built from scratch with HTML, CSS, and JavaScript, fully responsive.</p>
+                        <div class="tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card fade-in">
+                        <div class="project-icon"><i class="fas fa-list-check"></i></div>
+                        <h3>To-Do List App</h3>
+                        <p>A simple task manager to add, complete, and delete tasks. (Coming soon)</p>
+                        <div class="tags">
+                            <span>JavaScript</span><span>LocalStorage</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card fade-in">
+                        <div class="project-icon"><i class="fas fa-lock"></i></div>
+                        <h3>Secure Login Form</h3>
+                        <p>A login page with input validation and password strength checking. (Coming soon)</p>
+                        <div class="tags">
+                            <span>HTML</span><span>JavaScript</span><span>Security</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title fade-in">Get In Touch</h2>
+
+                <form class="contact-form fade-in" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" maxlength="80" required>
+                        <small class="error" id="name-error"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" maxlength="120" required>
+                        <small class="error" id="email-error"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can I help you?" maxlength="1000" required></textarea>
+                        <small class="error" id="message-error"></small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year">2026</span> Isaac Boateng. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
